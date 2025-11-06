@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="com.ucb.tdd.CalculadoraTest" time="0" errors="0" skipped="0">
+<testsuite tests="10" failures="0" name="com.ucb.tdd.TresEnRayaTest" time="0.019" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="17.0.14+8-LTS-191"/>
@@ -59,9 +59,14 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="com.ucb.tdd.CalculadoraTest" name="cuando3numerosRetornarSuma" time="0"/>
-  <testcase classname="com.ucb.tdd.CalculadoraTest" name="cuandoNumerosMayor1000Ignorar" time="0"/>
-  <testcase classname="com.ucb.tdd.CalculadoraTest" name="cuando2numerosRetornarSuma" time="0"/>
-  <testcase classname="com.ucb.tdd.CalculadoraTest" name="paraNumerosNegativosLanzarException" time="0"/>
-  <testcase classname="com.ucb.tdd.CalculadoraTest" name="siCadenaVaciaRetornarCero" time="0"/>
+  <testcase classname="com.ucb.tdd.TresEnRayaTest" name="siPrimerTurnoXSiguienteMas" time="0.007"/>
+  <testcase classname="com.ucb.tdd.TresEnRayaTest" name="cuandoLugarOcupadoLanzarExcepcion" time="0.006"/>
+  <testcase classname="com.ucb.tdd.TresEnRayaTest" name="siLlenaDiagonalOpuestaEntoncesGana" time="0.001"/>
+  <testcase classname="com.ucb.tdd.TresEnRayaTest" name="cuandoNoHayGanador" time="0"/>
+  <testcase classname="com.ucb.tdd.TresEnRayaTest" name="siPrimerTurnoEntoncesJuegaX" time="0"/>
+  <testcase classname="com.ucb.tdd.TresEnRayaTest" name="siLlenaColumnaEntoncesGana" time="0.001"/>
+  <testcase classname="com.ucb.tdd.TresEnRayaTest" name="siLlenaFilaEntoncesGana" time="0.001"/>
+  <testcase classname="com.ucb.tdd.TresEnRayaTest" name="siLlenaDiagonalEntoncesGana" time="0.001"/>
+  <testcase classname="com.ucb.tdd.TresEnRayaTest" name="cuandoFueraYlanzarExcepcion" time="0.001"/>
+  <testcase classname="com.ucb.tdd.TresEnRayaTest" name="cuandoFueraXlanzarExcepcion" time="0.001"/>
 </testsuite>

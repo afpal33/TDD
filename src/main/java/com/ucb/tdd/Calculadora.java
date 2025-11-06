@@ -4,27 +4,35 @@ public class Calculadora {
 	
 	public String suma(String sumandos) throws Exception {
 		
-		 
-		if(sumandos.equals("")) {
+		 if(sumandos.equals("")){
 			return "0";
-		}
+		 }
+
+		 validarNull(sumandos);
 		
-		String[] s = sumandos.split(",");
+		String[] sumandosV=sumandos.split(",");
 		
-		int resultado = 0;
-		
-		for(int i=0; i<s.length; i++) {
-			int x = new Integer(s[i]);
+		Integer suma = new Integer(0);
+
+		for(int i=0; i< sumandosV.length; i++){
+			Integer numero = new Integer(sumandosV[i]);
+
+			if(numero < 0){
+				throw new Exception("Nos enviaron un numero negativo");
+			}
+			if(numero <= 1000){
+				suma = suma + numero;
+			}
 			
-			if(x <= 1000) {
-				resultado = resultado + x;
-			}
-			if(x < 0) {
-				throw new Exception();
-			}
+			
 		}
-		
-		return (new Integer(resultado)).toString();
+		return suma.toString();
+	}
+
+	private void validarNull(String sumandos) throws Exception {
+		if(sumandos == null){
+			throw new Exception("Nos estan  enviando un valor null");
+		 }
 	}
 	
 	
@@ -40,6 +48,11 @@ public class Calculadora {
 	
 	
 	
+
+
+
+
+
 	
 	
 	
