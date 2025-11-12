@@ -6,8 +6,6 @@
 .classpath
 .project
 /.settings
-/src/main/java/com/ucb/tdd/TresEnRaya.java
-/src/test/java/com/ucb/tdd/TresEnRayaTest.java
 
 # Package Files #
 *.jar

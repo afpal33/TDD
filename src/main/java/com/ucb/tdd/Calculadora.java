@@ -38,64 +38,6 @@ public class Calculadora {
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-
-
-
-
-	
-	
-	
-	/*
-	public String suma(String sumandos) throws Exception{
-		if(sumandos != null && sumandos.equals("")) {
-			return "0";
-		}
-		
-		int total=0;
-		String[] sumandosV=sumandos.split(",");
-		
-		Integer s = null;
-		for(int i=0;i<sumandosV.length;i++) {
-			s = new Integer(sumandosV[i]);
-			
-			if(s <= 1000) {
-				total=total + s;
-			}
-			if(s < 0) {
-				throw new Exception("Numero negativo");
-			}
-		}
-		return (new Integer(total)).toString();
-	}*/
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	/*
 	public String suma(String sumandos) throws Exception {
 		
